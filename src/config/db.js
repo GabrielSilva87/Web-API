@@ -1,17 +1,17 @@
-const express = require('express');
-const connectDB = require('./config/db');
-const itemRoutes = require('./routes/itemRoutes');
-const errorHandler = require('./middleware/errorHandler');
+const mongoose = require('mongoose');
 require('dotenv').config();
 
-const app = express();
-const port = process.env.PORT || 3000;
+const connectDB = async () => {
+    try {
+        await mongoose.connect(process.env.MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log('MongoDB connected');
+    } catch (error) {
+        console.error('MongoDB connection error:', error);
+        process.exit(1);
+    }
+};
 
-connectDB();
-app.use(express.json());
-app.use('/items', itemRoutes);
-app.use(errorHandler);
-
-app.listen(port, () => {
-    console.log(`API running on http://localhost:${port}`);
-});
+module.exports = connectDB;
