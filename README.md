@@ -1,3 +1,3 @@
 # 👨‍💻Web API (Javascript) 2025
 
-### **ℹ THIS IS A TEST API, IT MAY CONTAIN SOME ERRORS WITHIN IT.**
+### **ℹ This is a test API, it may contain some error within it.**
