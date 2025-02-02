@@ -1,0 +1,26 @@
+advanced-api/
+│
+├── node_modules/
+│
+├── src/
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   └── itemController.js
+│   │
+│   ├── middleware/
+│   │   └── errorHandler.js
+│   │
+│   ├── models/
+│   │   └── itemModel.js
+│   │
+│   ├── routes/
+│   │   └── itemRoutes.js
+│   │
+│   └── app.js
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
