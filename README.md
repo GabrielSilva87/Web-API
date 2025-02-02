@@ -2,6 +2,8 @@
 
 ### `⚠️ This is a test API, it may contain some error within it.`
 
+(🇧🇷)
+
 *Gostou dos meus projetos? Para me ajudar a melhorar, você pode contribuir através de minha chave pix.*
    
 - **Pix: (+55) 43 98422-1307**
